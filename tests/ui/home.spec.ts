@@ -1,4 +1,4 @@
-import { test } from '../fixtures';
+import { test } from '../../fixtures';
 
 test.describe('Home page security area @smoke', () => {
     test('should verify secure content after login', async ({homePage}) => {
