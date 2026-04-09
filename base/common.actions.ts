@@ -107,7 +107,7 @@ export class CommonActions {
         const locator = this.page.locator(selector);
         try {
             await expect(locator).toBeVisible();
-            await locator.click({ button: 'right' }); // Вот магическая кнопка
+            await locator.click({ button: 'right' });
             await this.logActionResult('SUCCESS', selector, undefined, "Right clicked successfully", 'ACTION');
         } catch (error) {
             await this.logActionResult('FAIL', selector, "Visible & Right-Clickable", "Timeout/Not found", 'ACTION');
